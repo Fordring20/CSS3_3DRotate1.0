@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+             /*添加3D效果必要的属性*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             -->
+        .container{
+            -webkit-perspective:1000px;
+            -moz-perspective:1000px;
+            -ms-perspective:1000px;
+            -o-perspective:1000px;
+            perspective: 1000px;
+        }
+        .piece-box{
+            perspective-origin:50% 50%;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style:preserve-3d;
+            -ms-transform-style:preserve-3d;
+            transform-style:preserve-3d;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin:300px auto;
+            -webkit-animation:pieceRotate 5s linear infinite ;
+            -moz-animation:pieceRotate 5s linear infinite ;
+            -ms-animation:pieceRotate 5s linear infinite ;
+            animation:pieceRotate 5s linear infinite;
+
+        }
+             @-webkit-keyframes pieceRotate{
+                 0%{
+                     -webkit-transform:rotateY(0deg);
+                     -moz-transform:rotateY(0deg);
+                     -ms-transform:rotateY(0deg);
+                     transform:rotateY(0deg);
+                 }
+                 100%{
+                     -webkit-transform:rotateY(360deg);
+                     -moz-transform:rotateY(360deg);
+                     -ms-transform:rotateY(360deg);
+                     transform:rotateY(360deg);
+                 }
+             }
+             @-moz-keyframes pieceRotate{
+                 0%{
+                     -webkit-transform:rotateY(0deg);
+                     -moz-transform:rotateY(0deg);
+                     -ms-transform:rotateY(0deg);
+                     transform:rotateY(0deg);
+                 }
+                 100%{
+                     -webkit-transform:rotateY(360deg);
+                     -moz-transform:rotateY(360deg);
+                     -ms-transform:rotateY(360deg);
+                     transform:rotateY(360deg);
+                 }
+             }
+             @-ms-keyframes pieceRotate{
+                 0%{
+                     -webkit-transform:rotateY(0deg);
+                     -moz-transform:rotateY(0deg);
+                     -ms-transform:rotateY(0deg);
+                     transform:rotateY(0deg);
+                 }
+                 100%{
+                     -webkit-transform:rotateY(360deg);
+                     -moz-transform:rotateY(360deg);
+                     -ms-transform:rotateY(360deg);
+                     transform:rotateY(360deg);
+                 }
+             }
+            @keyframes pieceRotate{
+                0%{
+                    -webkit-transform:rotateY(0deg);
+                    -moz-transform:rotateY(0deg);
+                    -ms-transform:rotateY(0deg);
+                    transform:rotateY(0deg);
+                }
+                100%{
+                    -webkit-transform:rotateY(360deg);
+                    -moz-transform:rotateY(360deg);
+                    -ms-transform:rotateY(360deg);
+                    transform:rotateY(360deg);
+                }
+            }
+
+        /*添加基本样式*/
+        .piece{
+            position: absolute;
+            opacity: 0.5;
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .piece-1{
+            background: #f66;
+            -webkit-transform: rotateY(0deg) translateZ(173.2px);
+            -moz-transform:rotateY(0deg) translateZ(173.2px);
+            -ms-transform:rotateY(0deg) translateZ(173.2px);
+            transform:rotateY(0deg) translateZ(173.2px);
+
+        }
+        .piece-2{
+            background: #ff0;
+            -webkit-transform:rotateY(60deg) translateZ(173.2px);
+            -moz-transform:rotateY(60deg) translateZ(173.2px);
+            -ms-transform:rotateY(60deg) translateZ(173.2px);
+            transform:rotateY(60deg) translateZ(173.2px);
+
+        }
+        .piece-3{
+            background: #069;
+            -webkit-transform:rotateY(120deg) translateZ(173.2px);
+            -moz-transform:rotateY(120deg) translateZ(173.2px);
+            -ms-transform:rotateY(120deg) translateZ(173.2px);
+            transform:rotateY(120deg) translateZ(173.2px);
+
+        }
+        .piece-4{
+            background: #099;
+            -webkit-transform:rotateY(180deg) translateZ(173.2px);
+            -moz-transform:rotateY(180deg) translateZ(173.2px);
+            -ms-transform:rotateY(180deg) translateZ(173.2px);
+            transform:rotateY(180deg) translateZ(173.2px);
+
+        }
+        .piece-5{
+            background: #f03;
+            -webkit-transform:rotateY(240deg) translateZ(173.2px);
+            -moz-transform:rotateY(240deg) translateZ(173.2px);
+            -ms-transform:rotateY(240deg) translateZ(173.2px);
+            transform:rotateY(240deg) translateZ(173.2px);
+
+        }
+        .piece-6{
+            background: #f60;
+            -webkit-transform:rotateY(300deg) translateZ(173.2px);
+            -moz-transform:rotateY(300deg) translateZ(173.2px);
+            -ms-transform:rotateY(300deg) translateZ(173.2px);
+            transform:rotateY(300deg) translateZ(173.2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="piece-box">
+            <div class="piece piece-1"></div>
+            <div class="piece piece-2"></div>
+            <div class="piece piece-3"></div>
+            <div class="piece piece-4"></div>
+            <div class="piece piece-5"></div>
+            <div class="piece piece-6"></div>
+        </div>
+    </div>
+</body>
+</html>
